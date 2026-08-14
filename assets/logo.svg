@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 130" fill="none" role="img" aria-label="Duel and Battle shield emblem">
+  <defs>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="120" y2="130" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d9b978"/>
+      <stop offset="0.5" stop-color="#a9814f"/>
+      <stop offset="1" stop-color="#8a6a3f"/>
+    </linearGradient>
+  </defs>
+  <!-- Shield outline -->
+  <path d="M60 4 L112 22 V60 C112 92 90 114 60 126 C30 114 8 92 8 60 V22 Z"
+        fill="none" stroke="url(#goldGrad)" stroke-width="4" stroke-linejoin="round"/>
+  <!-- Center divider -->
+  <line x1="60" y1="14" x2="60" y2="116" stroke="url(#goldGrad)" stroke-width="3"/>
+  <!-- Sword (left half) -->
+  <g stroke="url(#goldGrad)" stroke-width="3.5" stroke-linecap="round">
+    <line x1="34" y1="34" x2="34" y2="88"/>
+    <line x1="24" y1="46" x2="44" y2="46"/>
+    <path d="M34 88 L28 96 L34 100 L40 96 Z" fill="url(#goldGrad)" stroke="none"/>
+    <line x1="34" y1="30" x2="34" y2="34"/>
+  </g>
+  <!-- Lightning bolt (right half) -->
+  <path d="M92 32 L74 66 L86 66 L78 98 L102 60 L88 60 Z"
+        fill="url(#goldGrad)" stroke="none"/>
+</svg>
