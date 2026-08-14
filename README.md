@@ -15,11 +15,13 @@ possible, written as clean, ordinary web files you can hand to Claude Code.
 ## What's here
 
 ```
-index.html        All page sections (hero, about, how to buy, shipping, contact, footer)
-css/styles.css     All styling — colors, type, and layout live in CSS custom
-                    properties at the top of the file for easy tweaking
-js/script.js       Mobile nav toggle
-assets/logo.svg    Hand-recreated shield/sword/lightning emblem (vector, matches the original)
+index.html          All page sections (hero, about, how to buy, shipping, contact, footer)
+css/styles.css       All styling — colors, type, and layout live in CSS custom
+                      properties at the top of the file for easy tweaking
+js/script.js         Mobile nav toggle
+assets/logo-full.png Real logo (shield + "Duel and Battle" wordmark), used in the hero
+assets/logo-mark.png Shield-only crop of the real logo, used in the header/footer and favicon
+assets/logo.svg      Old hand-recreated placeholder emblem, no longer referenced — safe to delete
 ```
 
 No build step, no dependencies — just open `index.html` in a browser, or serve
@@ -32,16 +34,15 @@ the folder with any static server.
   every "Shop on TCGPlayer" / category link currently points to
   `https://www.tcgplayer.com/` as a placeholder. Swap in your actual
   storefront and per-game filter URLs.
-- **Fonts/colors**: matched by eye from screenshots of the live site (a
-  small-caps serif for headings — currently Playfair Display — and a sans for
-  body/nav text — currently Inter — on a near-black background with a muted
-  gold accent). Close, but not guaranteed pixel-identical to the Canva
-  original. All of it is controlled from the `:root` variables at the top of
-  `css/styles.css`.
-- **Logo**: recreated as an SVG (`assets/logo.svg`) rather than pulled as a
-  raster file, so it's crisp at any size and easy to recolor. If you'd rather
-  use your original Canva-exported logo file, just drop it in `assets/` and
-  update the `<img src>` references in `index.html`.
+- **Fonts/colors**: a serif for headings — currently Playfair Display — and a
+  sans for body/nav text — currently Inter — on a near-black background with
+  a muted gold accent. (The faux small-caps styling from the first pass was
+  removed — it looked uneven at large sizes since the hosted Playfair Display
+  files don't ship true small-caps glyphs.) All of it is controlled from the
+  `:root` variables at the top of `css/styles.css`.
+- **Logo**: now the real logo files (`assets/logo-full.png` in the hero,
+  `assets/logo-mark.png` in the header/footer/favicon), cropped from the
+  transparent-background PNG exports.
 
 ## Using this with Claude Code
 
