@@ -87,8 +87,8 @@ a { color: inherit; text-decoration: none; }
 .icon-external, .icon-mail { flex-shrink: 0; }
 
 .amp {
-  font-family: var(--font-sans);
-  font-weight: 500;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
 }
 
 /* ---------- Header ---------- */
@@ -350,7 +350,7 @@ section { padding: 96px 0; }
 .contact .container { max-width: 620px; text-align: center; }
 
 .contact .section-heading { color: var(--gold); }
-.asterisk { color: var(--gold); font-family: var(--font-sans); }
+.asterisk { color: var(--gold); font-family: Georgia, "Times New Roman", serif; }
 
 .contact .btn-gold { margin-top: 8px; }
 
